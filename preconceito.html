@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end Awesome -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Website Sobre Racismo & Preconceito</title>
+     <!-- VLibras  -->
+     <div vw class="enabled">
+        <div vw-access-button class="active"> </div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"> </div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"> </script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+<!--biblioteca JQuery-->
+<script src="script/jquery-3.2.1.min.js"> </script>
+
+<!--script com a função de aumentar a fonte-->
+<script src="Script/alterarFonte.js"> </script>
+
+<!-- CONTRASTE -->
+<style>
+    body {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+    
+    .high-contrast {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+</style>
+
+<script>
+    function toggleContrast() {
+        var bodyElement = document.querySelector('body');
+        bodyElement.classList.toggle('high-contrast');
+    }
+</script>
+
+<!-- end CONTRASTE-->
+
+</head>
+<body>
+    <!-- header -->
+    <header style="background-image: url('img/Sobre-preconceito.png')">
+        <!-- container -->
+        <div class="container">
+            <nav>
+               <a href="index.html"></a>
+               <img src="img/endracism.png.png" alt="Logo">
+               <ul class="ul">
+                <a href="index.html">Home</a>
+                <a href="racismo.html">Racismo</a>
+                <a href="preconceito.html">Preconceito</a>
+                <a class="btn" href="sobre.html">Sobre</a>
+                <div class="close-icon" onclick="closeMenu()">
+                    <i class="fa fa-times-circle"></i>
+                </div>
+               </ul>
+               <div class="menu-icon" onclick="openMenu()">
+                   <i class="fa fa-bars"></i>
+               </div>
+            </nav>
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>Preconceito</h1>
+                </div>
+            </section>
+        </div>
+        <!-- end container -->
+    </header>
+    <!-- end header -->
+       <section class="preconceito">
+        <div class="container">
+            <div class="preconceito-text">
+                <h3>A Liberdade De Expressão & Crimes São Diferentes</h3>
+                <p class="acessibilidade">
+                    A palavra preconceito é etimologicamente constituída (entende-se por etimologia o estudo do significado de uma palavra a partir dos componentes que a constituem) por duas partes diferentes: 
+                    pré, que dá ideia de algo anterior, antecedente, que existe de forma primária, primeira, precedente;
+                     e conceito, aquilo que se entende ou compreende em respeito de algo, derivado do latim conseptus, que se refere à construção ideal do ser ou de objetos apreensíveis cognitivamente. 
+                     A ideia do preconceito refere-se, então, a um conceito formado de forma anterior ou antecedente à constatação dos fatos, utilizando-se de características julgadas universais, sendo atribuíveis a todos que se encaixam na categoria referida, ou implícitas, naturais ao objeto que é dirigida.
+                </p>
+                <a href="sobre.html" class="btn animate-btn">Sobre</a>
+            </div>
+            <div class="preconceito-img">
+               <img src="img/Tela-Preconceito.jpeg" alt="Preconceito">
+            </div>
+        </div>
+       </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+               <a href="#"> <i class="fa fa-facebook"></i></a> 
+               <a href="#"> <i class="fa fa-instagram"></i></a>
+               <a href="#"> <i class="fa fa-github"></i></a> 
+               <a href="#"> <i class="fa fa-linkedin"></i></a>
+            </div>
+            <p> Desenvolvido Por: Victor Hugo</p>
+        </div>
+    </footer>
+        <!-- end footer -->
+         <!-- BOTÕES DE ACESSIBILIDADE -->
+         <div style="position:fixed!important; top:10px; width:160px; height:50px; left:80%;">
+            <button class="botao" onclick="alterarFonte('a');" title="Aumentar fonte"> A+ </button>
+            <button class="botao" onclick="alterarFonte('d');" title="Diminuir fonte"> A- </button>
+            <button class="botao" onclick="alterarFonte('n');" title="Fonte normal"> A </button>
+            <button onclick="toggleContrast()">Alternar Contraste</button>
+        </div>
+        <!-- end BOTÕES DE ACESSIBILIDADE -->
+        <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end Awesome -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Website Sobre Racismo & Preconceito</title>
+     <!-- VLibras  -->
+     <div vw class="enabled">
+        <div vw-access-button class="active"> </div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"> </div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"> </script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+<!--biblioteca JQuery-->
+<script src="script/jquery-3.2.1.min.js"> </script>
+
+<!--script com a função de aumentar a fonte-->
+<script src="Script/alterarFonte.js"> </script>
+
+<!-- CONTRASTE -->
+<style>
+    body {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+    
+    .high-contrast {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+</style>
+
+<script>
+    function toggleContrast() {
+        var bodyElement = document.querySelector('body');
+        bodyElement.classList.toggle('high-contrast');
+    }
+</script>
+
+<!-- end CONTRASTE-->
+
+</head>
+<body>
+    <!-- header -->
+    <header style="background-image: url('img/background-home.png')">
+        <!-- container -->
+        <div class="container">
+            <nav>
+               <a href="index.html"></a>
+               <img src="img/endracism.png.png" alt="Logo">
+
+               <ul class="ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="racismo.html">Racismo</a></li>
+                <li><a href="preconceito.html">Preconceito</a></li>
+                <li class="btn"><a href="sobre.html">Sobre</a></li>
+                <div class="close-icon" onclick="closeMenu()">
+                   <i class="fa fa-times-circle"></i>
+                </div>
+             </ul>
+
+               <div class="menu-icon" onclick="openMenu()">
+                   <i class="fa fa-bars"></i>
+               </div>
+            </nav>
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>End Racismo</h1>
+                    <p class="acessibilidade">Construa Um Ambiente Agradavel Para Você & Para As Pessoas Que O Cercam!</p>
+                    <a href="racismo.html" class="btn">Sobre o Racismo</a>
+                </div>
+            </section>
+        </div>
+        <!-- end container -->
+    </header>
+    <!-- end header -->
+    <!-- faca mais -->
+    <section class="faca-mais">
+        <!-- container -->
+        <div class="container">
+            <div class="preconceito-img">
+            <h3>Faça mais com End Racismo</h3>
+            <p class="acessibilidade"> 
+               Começo pode até parecer o fim mais é o início de uma fase!
+            </p>
+            <a href="sobre.html" class="btn animate-btn">Sobre o conteúdo descrito</a>
+           </div>
+           <div class="preconceito-img">
+           <img src="img/Preconceito-background.jpg" alt="Preconceito">
+        </div>
+    <!-- end container -->
+    </section>
+    <!-- end faca mais -->
+     <!-- faca mais 2 -->
+     <section class="faca-mais">
+        <!-- container -->
+        <div class="container">
+            <div class="preconceito-img">
+        <img src="img/racismo.jpg" alt="Racismo">
+        </div>
+        <div class="preconceito-img">
+            <h3>O Que É Racismo ?</h3>
+            <p class="acessibilidade"> 
+                O racismo parte da ideia de que a espécie humana seria dividida por raças, daí o nome.
+                No entanto, as diferenças físicas e genéticas que os seres humanos apresentam não são suficientes para caracterizar uma raça. 
+                O DNA de uma pessoa branca e uma pessoa negra, por exemplo, varia menos de 0,1%.
+                Então, o racismo é a ideia de que indivíduos de certa etnia possuem características, habilidades ou qualidades específicas desta etnia. 
+                Portanto, seriam uma "raça" superior, enquanto outras, inferiores.
+                Ele pode assumir a forma de ações, práticas, crenças sociais ou sistemas políticos que consideram que diferentes "raças" devem ser classificadas como superiores ou inferiores. 
+                O racismo também pode julgar que pessoas de etnias distintas devem ser tratadas de forma diferente.
+            </p>
+            <a href="sobre.html" class="btn">Sobre o conteúdo descrito</a>
+        </div>
+    </div>
+    <!-- end container -->
+    </section>
+    <!-- end faca mais 2 -->
+    <!-- depoimentos -->
+    <section class="depoimentos">
+        <div class="container">
+           <h3>Nossos Depoimentos</h3> 
+           <p class="acessibilidade">Leia o que nossos clientes falam de nós pro mundo</p>
+           <div class="cards">
+            <!-- Card item 1 -->
+            <div class="card-item">
+                <img src="img/Liam-Payne.jpg" alt="Liam">
+                <p class="nome-user">Liam Payne</p>
+                <p class="depoimento-user">
+                    O Site é informativo, deixa você sempre atualizado e ciente sobre o limite da liberdade de expressão e crime sobre racismo e preconceito;
+                    site acessivel para os usuários acessarem.
+                </p> 
+            <div class="estrelas">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+               </div>
+             </div>
+             <!-- end card item 1 -->
+              <!-- Card item 2 -->
+            <div class="card-item">
+                <img src="img/jude bellingham.jpg" alt="Jude">
+                <p class="nome-user">Jude Bellingham</p>
+                <p class="depoimento-user">
+                    The Site is informative, leaves you always up to date and aware of the limits of freedom of expression and crime on racism and prejudice;
+                     accessible website for users to access.
+                </p> 
+            <div class="estrelas">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+               </div>
+             </div>
+             <!-- end card item 2 -->
+              <!-- Card item 3 -->
+            <div class="card-item">
+                <img src="img/Michael-B-jordan.jpg" alt="Michael">
+                <p class="nome-user">Michael B. Jordan</p>
+                <p class="depoimento-user">
+                    El Sitio es informativo, lo deja siempre actualizado y consciente de los límites de la libertad de expresión y el delito de racismo y prejuicio;
+                     sitio web accesible para que los usuarios accedan.
+                </p> 
+            <div class="estrelas">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+               </div>
+             </div>
+             <!-- end card item 3 -->
+           </div>
+        </div>
+    </section>
+    <!-- end depoimentos -->
+    <!-- Clientes -->
+    <section class="clientes">
+       <div class="container">
+        <h3>Nossos Clientes</h3>
+        <p class="acessibilidade">Prestamos serviços todo tipo de empresa
+            ou projetos, olhe alguns dos nossos clientes</p>
+            <div>
+                <img src="img/apple.png" alt="">
+                <img src="img/microsft.png" alt="">
+                <img src="img/slack.png" alt="">
+                <img src="img/google.png" alt="">
+            </div>
+       </div> 
+    </section>
+    <!-- end Clientes -->
+    <!-- faca mais -->
+    <section class="faca-mais">
+        <!-- container -->
+        <div class="container">
+            <div class="preconceito-img">
+            <h3>Os Preconceitos na sociedade</h3>
+            <p class="acessibilidade"> 
+                O termo preconceito se refere a uma opinião preconcebida ou sentimento formado sobre uma pessoa ou um grupo, sem que haja experiências ou fatos relevantes para comprová-lo.
+
+                O termo é usado geralmente de forma negativa, onde os membros pertencentes a um grupo são vistos como inferiores.
+                
+                Geralmente, ocorre com características que algum grupo considera incomum ou indesejável em outra pessoa ou grupo. Isso acontece quando se critica aspectos como etnia, gênero, nacionalidade, status social, orientação sexual ou afiliação religiosa de alguém.
+                
+                Além do racismo, as principais formas de preconceito incluem:
+                
+                Machismo: a crença de que as mulheres são menos capazes do que os homens;
+                Homofobia: antipatia, desprezo, preconceito, aversão ou ódio à homossexualidade ou pessoas identificadas ou percebidas como lésbicas, gays, bissexuais ou transgêneros (LGBT);
+                Discriminação religiosa: valorização ou menosprezo de uma pessoa ou grupo por causa de suas crenças.
+            </p>
+            <a href="sobre.html" class="btn animate-btn">Sobre o conteúdo descrito</a>
+           </div>
+           <div class="faca-mais-img"></div>
+           <img src="img/bandeiraLGBTQQIA.png" alt="Preconceito">
+        </div>
+    </div>
+    <!-- end container -->
+    </section>
+    <!-- end faca mais -->
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+               <a href="#"> <i class="fa fa-facebook"></i></a> 
+               <a href="#"> <i class="fa fa-instagram"></i></a>
+               <a href="#"> <i class="fa fa-github"></i></a> 
+               <a href="#"> <i class="fa fa-linkedin"></i></a>
+            </div>
+            <p> Desenvolvido Por: Victor Hugo</p>
+        </div>
+    </footer>
+        <!-- end footer -->
+          <!-- BOTÕES DE ACESSIBILIDADE -->
+          <div style="position:fixed!important; top:10px; width:160px; height:50px; left:80%;">
+            <button class="botao" onclick="alterarFonte('a');" title="Aumentar fonte"> A+ </button>
+            <button class="botao" onclick="alterarFonte('d');" title="Diminuir fonte"> A- </button>
+            <button class="botao" onclick="alterarFonte('n');" title="Fonte normal"> A </button>
+            <button onclick="toggleContrast()">Alternar Contraste</button>
+        </div>
+        <!-- end BOTÕES DE ACESSIBILIDADE -->
+        <script src="js/main.js"></script>
+</body>
+</html>
